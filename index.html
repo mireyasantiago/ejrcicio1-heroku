@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Platzigram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="public/app.css">
+  </head>
+  <body>
+    <section id="main-container">
+      <div class="container">
+        <div class="row">
+          <!-- el push-s1 recorre el espacio hacia la derecha-->
+          <div class="col s10 push-s1">
+            <div class="row">
+              <div class="col m5 hide-on-small-only">
+                <img src="public/cel.jpg" class="iphone" alt="">
+              </div>
+              <div class="col s12 m7">
+                <div class="row">
+                  <div class="signup-form">
+                    <h1 class="platzigram">Platzigram</h1>
+                    <form class="signup-form" action="index.html" method="post">
+                      <h2>Registro para ver fotos de amigos</h2>
+                      <div class="section">
+                        <a href="#" class="btn btn-fb hide-on-small-only">Iniciar sesion en Facebook</a>
+                        <a href="#" class="btn btn-fb hide-on-med-and-up">Iniciar sesion</a>
+                      </div>
+                      <div class="divider">
+
+                      </div>
+                      <div class="section">
+                        <input type="email" name="email" placeholder="Correo electronico" value="">
+                        <input type="text" name="name" placeholder="Nombre completo" value="">
+                        <input type="text" name="username" placeholder="Nombre del usuario" value="">
+                        <input type="password" name="password" placeholder=" contraseña " value="">
+                        <button type="submit" class="btn waves-effect waves-light btn-signup" name="button">Registrate</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="login-box">
+                    ¿Tienes una cuenta?<a href="/signup">Entrar</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l3 center-align">
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-button btn-flat' href='#' data-activates='dropdown1'>Idioma</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">Español</a></li>
+              <li><a href="#!">Ingles</a></li>
+            </ul>
+          </div>
+          <div class="col s12 l3 push-l6 center-align">
+            2017 platzigram
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  </body>
+</html>
