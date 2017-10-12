@@ -8,6 +8,12 @@ app.use(express.static('public'));
 //var port = process.env.PORT || 3000;
 /*la linea anterior es para ejecutar el proyecto en Heroku*/
 
+app.set('port', (process.env.PORT || 5000));
+
+
+
+
+
 
 app.get('/', function(req, res){
   //res.send('hola');
@@ -55,8 +61,11 @@ app.get('/api/pictures', function(req,res, next){
 
 })
 
-
+/*
 app.listen(3000, function(err){
   if(err) return console.log("hubo un error"), process.exit(1);
     console.log("platzigram escuchando puerto 3000");
-})
+})*/
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
